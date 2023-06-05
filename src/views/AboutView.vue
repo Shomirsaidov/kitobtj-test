@@ -149,6 +149,7 @@
       addToCart(id) {
         this.$store.state.cartBooks.unshift(id)
         this.$store.state.newInCart += 1
+        this.$router.push('/shopping')
 
         console.log(this.$store.state.cartBooks)
       }
